@@ -13,9 +13,9 @@ name: "CodeQL Advanced"
 
 on:
   push:
-    branches: [ "5.11.0" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "5.11.0" ]
+    branches: [ "main" ]
   schedule:
     - cron: '39 16 * * 0'
 
@@ -67,7 +67,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
-        ref: 5.11.0
+        ref: activemq-5.11.0
 
     # Add any setup steps before running the `github/codeql-action/init` action.
     # This includes steps like installing compilers or runtimes (`actions/setup-node`
